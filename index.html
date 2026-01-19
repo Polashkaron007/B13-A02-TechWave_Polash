@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
 
         <nav class="navbar">
-            <h3>TechWave</h3>
-            <ul>
+            <h3 class="logo">
+                <span>Tech</span><span id="nav-text">Wave</span>
+            </h3>
+            <ul class="nav-menu">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
-            <button>Subscribe</button>
+            <button class="nav-subscribe-btn bg-light">Subscribe  <i class="fa-solid fa-arrow-right fa-beat"></i> </button>
         </nav>
 
         <div class="banner">
-            <h3>TechWave</h3>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <button>Listen on Spotify</button>
-            <button>Subscribe</button>
+            <div class="hero-container">
+                <div class="hero-wrapper">
+                    <img class="hero-circle" src="assets/hero-circle.png" alt="">
+                    <img class="hero-mic" src="assets/microphone.png"  alt="microphone">
+                    <span class="new-badge">NEW</span>
+                </div>
+                <h1 class="hero-title">TechWave</h1>
+                <p class="hero-text">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
+                <div class="hero-buttons">
+                    <button class="hero-spotify-btn bg-light"><img src="assets/spotify.png" alt=""> Listen on Spotify</button>
+                    <button class="hero-subscribe-btn"><img src="assets/message.png" alt=""> Subscribe</button>
+                </div>
+            </div>
         </div>
     </header>
 

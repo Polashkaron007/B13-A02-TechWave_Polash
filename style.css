@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg-light{
+    background: linear-gradient(90deg,
+        #F7E93F 0%,
+        #FB09B4 51%,
+        #9100F8 100%)
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#nav-text{
+    background: linear-gradient(90deg,
+        #F7E93F 0%,
+        #FB09B4 51%,
+        #9100F8 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 70px;
+    background-color: #1A0B2E;
+    padding: 16px 200px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.nav-subscribe-btn{
+    padding: 8px 18px;
+    border-radius: 1000px;
+    color: #FFFFFF;
+}
+
+.banner{
+    width: 100%;
+    height: 650px;
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hero-container {
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hero-wrapper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 25px auto;
+}    
+.hero-circle{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-mic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+}
+
+.new-badge {
+    position: absolute;
+    top: 12px;
+    right: 60px;
+    background-color: #00FF88;
+    color: black;
+    font-size: 1.25rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px  rgba(0, 255, 136, 0.6);
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.hero-spotify-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.hero-subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 1000px;
+    border: 1px solid #00FF88;
+    background: transparent;
+    color: #00FF88;
+    cursor: pointer;
+}

@@ -64,6 +64,16 @@
     transform: scale(1.15);
 }
 
+.hamburger{
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.hamburger:hover{
+    transform: scale(1.15);
+}
+
 .banner{
     width: 100%;
     height: 650px;
@@ -406,6 +416,10 @@
     gap: 24px;
     margin-bottom: 30px;
 }
+.footer-icons-container{
+    display: flex;
+    gap: 24px;
+}
 .footer-icons p{
     color: rgba(255, 255, 255, 0.525);
 }
@@ -423,4 +437,192 @@
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.525);
+}
+
+/* Responsive For Mobile  media  query*/
+@media screen and (max-width:576px) {
+    @media screen and (max-width: 575px) {
+
+  /* GLOBAL */
+  body{
+    overflow-x: hidden;
+  }
+
+  /*  NAVBAR  */
+  .navbar{
+    grid-template-columns: auto 1fr auto;
+    padding: 12px 16px;
+    height: 56px;
+  }
+
+  .nav-menu,.nav-subscribe-btn{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+    color:  rgba(255, 255, 255, 0.803);
+    justify-self: end;
+    
+  }
+
+  /* HERO / BANNER  */
+  .banner{
+    height: auto;
+    padding: 60px 16px;
+  }
+
+  .hero-container{
+    width: 100%;
+  }
+
+  .hero-wrapper{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .hero-mic{
+    width: 70px;
+  }
+
+  .new-badge{
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    top: 6px;
+    right: 28px;
+  }
+
+  .hero-title{
+    font-size: 1.8rem;
+  }
+
+  .hero-text{
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .hero-buttons{
+    width: 100%;
+  }
+
+  .hero-buttons button{
+    width: 100%;
+  }
+
+  /* ABOUT SECTION */
+  .section-about{
+    padding: 60px 16px;
+  }
+
+  .section-about-title{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section-about-container{
+    text-align: center;
+  }
+
+  .about-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about-number{
+    font-size: 2.5rem;
+  }
+
+  .about-name{
+    font-size: 1rem;
+  }
+
+  /* CHOOSE */
+  .section-choose{
+    padding: 60px 16px;
+  }
+
+  .section-choose-title{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .choose-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #card-1{
+    padding: 40px;
+  }
+
+
+  /* FEATURED EPISODES */
+  .section-container{
+    padding: 60px 16px;
+  }
+
+  .section-featured-title{
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+
+  .feature-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-card iframe{
+    height: 200px;
+  }
+
+  /* HOST SECTION */
+  .section-host-title{
+    font-size: 2rem;
+  }
+
+  .section-host-container{
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .host-img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .section-host-container h4{
+    font-size: 1.5rem;
+  }
+
+  .host-icons{
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  .footer-section{
+    padding: 50px 20px 60px;
+    background-position: center;
+    background-size: center;
+  }
+
+  .footer-title{
+    font-size: 2.6rem;
+  }
+
+  .footer-icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .footer-copy{
+    font-size: 0.9rem;
+  }
+
+}
+
 }
